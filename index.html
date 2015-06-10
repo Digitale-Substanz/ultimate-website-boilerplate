@@ -47,5 +47,14 @@
 	</div><!-- .wrapper -->
 	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 	<script src="bootstrap/dist/js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('.scroll-link').click(function(event){
+				event.preventDefault();
+				var targetId = $(this).attr('data-id');
+				scrollToId('#' + targetId, 750);
+			});
+		});
+	</script>
 </body>
 </html>
