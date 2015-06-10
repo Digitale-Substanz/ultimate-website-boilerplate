@@ -1,0 +1,27 @@
+//
+// GLOBAL MIXINS
+//
+.dev-border(@color: #c0c0c0){
+	border: 0px solid @color;
+}
+.shadow-border-bottom(@border-color, @box-shadow-color) {
+	border-bottom: 1px solid;
+	border-color: @border-color;
+	box-shadow: 0px 1px 0px @box-shadow-color;
+}
+.box-shadow-standard(@color: rgba(0,0,0,0.75)){
+	box-shadow: 0px 2px 5px @color;
+} 
+.transition-standard(@time: 0.3s, @mode: ease-in-out, @delay: 0s){
+	-moz-transition: all @time @mode @delay;
+	-webkit-transition: all @time @mode @delay;
+	-ms-transition: all @time @mode @delay;
+	-o-transition: all @time @mode @delay;
+	transition: all @time @mode @delay;
+}
+.background-fixed{
+	background-size: cover;
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
